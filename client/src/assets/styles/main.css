@@ -1,0 +1,374 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================
+   BODY / APP THEME
+========================= */
+body {
+  font-family: "Segoe UI", "Inter", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(0, 153, 255, 0.12), transparent 25%),
+    radial-gradient(circle at top right, rgba(0, 255, 255, 0.08), transparent 25%),
+    linear-gradient(135deg, #020617, #081225, #071a32);
+  color: #f8fafc;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1, h2, h3, h4, h5, h6 {
+  color: #f8fafc;
+  letter-spacing: 0.3px;
+  font-weight: 700;
+}
+
+p {
+  color: #cbd5e1;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+.page-wrapper {
+  padding: 40px 20px 60px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background: rgba(8, 15, 30, 0.82) !important;
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: #cbd5e1 !important;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 8px 14px !important;
+}
+
+.nav-link:hover {
+  color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.08);
+}
+
+/* =========================
+   GLASS CARD
+========================= */
+.glass-card,
+.card {
+  background: rgba(15, 23, 42, 0.72) !important;
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 22px !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.22);
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  border-radius: 14px !important;
+  font-weight: 600;
+  padding: 10px 18px;
+  transition: all 0.25s ease;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary,
+.btn-info,
+.btn-success,
+.btn-warning,
+.btn-danger {
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* =========================
+   FORM INPUTS
+========================= */
+.form-control,
+.form-select,
+textarea {
+  background: rgba(15, 23, 42, 0.88) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  border-radius: 14px !important;
+  padding: 12px 14px;
+}
+
+.form-control::placeholder,
+textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+.form-control:focus,
+.form-select:focus,
+textarea:focus {
+  box-shadow: 0 0 0 0.2rem rgba(56, 189, 248, 0.22) !important;
+  border-color: rgba(56, 189, 248, 0.45) !important;
+}
+
+/* =========================
+   TABLES
+========================= */
+.table {
+  border-radius: 18px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background: rgba(15, 23, 42, 0.96) !important;
+  color: #38bdf8 !important;
+  border-color: rgba(255, 255, 255, 0.06) !important;
+}
+
+.table tbody td {
+  background: rgba(10, 18, 35, 0.9) !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(255, 255, 255, 0.04) !important;
+}
+
+.table-hover tbody tr:hover td {
+  background: rgba(30, 41, 59, 0.95) !important;
+}
+
+/* =========================
+   BADGES
+========================= */
+.badge {
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/* =========================
+   ALERTS
+========================= */
+.alert {
+  border-radius: 16px !important;
+  border: none !important;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   LIST GROUP
+========================= */
+.list-group-item {
+  background: rgba(15, 23, 42, 0.82) !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+  border-radius: 18px !important;
+}
+
+/* =========================
+   UTILITY CLASSES
+========================= */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.section-subtitle {
+  color: #94a3b8;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+.soft-text {
+  color: #94a3b8;
+}
+
+.text-glow {
+  color: #38bdf8;
+}
+
+.hover-lift {
+  transition: all 0.28s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .page-wrapper {
+    padding: 28px 14px 50px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem !important;
+  }
+}
+
+/* =========================
+   OUTLINE BUTTONS
+========================= */
+.btn-outline-light,
+.btn-outline-info,
+.btn-outline-warning,
+.btn-outline-primary {
+  border-width: 1px !important;
+  border-radius: 14px !important;
+  backdrop-filter: blur(8px);
+}
+
+.btn-outline-light:hover,
+.btn-outline-info:hover,
+.btn-outline-warning:hover,
+.btn-outline-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   UPLOAD DROPZONE
+========================= */
+.upload-dropzone {
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  background: rgba(15, 23, 42, 0.6);
+  cursor: pointer;
+}
+
+.upload-dropzone:hover {
+  border-color: #38bdf8;
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.upload-dropzone.active {
+  border-color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* =========================
+   DOCUMENT STATUS BADGES
+========================= */
+.badge.bg-success {
+  background: linear-gradient(135deg, #16a34a, #22c55e) !important;
+  color: white;
+}
+
+.badge.bg-danger {
+  background: linear-gradient(135deg, #dc2626, #ef4444) !important;
+  color: white;
+}
+
+.badge.bg-info {
+  background: linear-gradient(135deg, #0284c7, #38bdf8) !important;
+  color: white;
+}
+
+/* =========================
+   BLOCKCHAIN EXPLORER
+========================= */
+.blockchain-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.blockchain-card::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(56, 189, 248, 0.15), transparent 70%);
+  border-radius: 50%;
+}
+
+.hash-box {
+  background: rgba(2, 6, 23, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 16px;
+  height: 100%;
+}
+
+.hash-text {
+  font-family: "Courier New", monospace;
+  color: #e2e8f0;
+  word-break: break-word;
+  margin-top: 6px;
+}
+
+/* =========================
+   INTEGRITY RESULT CARD
+========================= */
+.integrity-result-card {
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s ease;
+}
+
+.integrity-valid {
+  background: rgba(22, 163, 74, 0.08);
+  border-color: rgba(34, 197, 94, 0.35);
+}
+
+.integrity-tampered {
+  background: rgba(220, 38, 38, 0.08);
+  border-color: rgba(239, 68, 68, 0.35);
+}
+
+.integrity-error {
+  background: rgba(234, 179, 8, 0.08);
+  border-color: rgba(250, 204, 21, 0.35);
+}
+
+/* =========================
+   TOAST POLISH
+========================= */
+.Toastify__toast {
+  border-radius: 16px !important;
+  font-weight: 500;
+  backdrop-filter: blur(10px);
+}
+
+.Toastify__progress-bar {
+  border-radius: 999px;
+}
